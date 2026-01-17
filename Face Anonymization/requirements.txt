@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+python-multipart
+streamlit
+streamlit-webrtc
+av
+requests
+opencv-python
+numpy
+mediapipe
