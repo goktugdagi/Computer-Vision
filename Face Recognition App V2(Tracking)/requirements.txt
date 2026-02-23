@@ -1,0 +1,8 @@
+opencv-contrib-python
+face-recognition
+fastapi
+uvicorn
+numpy
+streamlit
+requests
+python-multipart
