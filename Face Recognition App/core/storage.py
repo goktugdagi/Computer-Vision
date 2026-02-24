@@ -34,11 +34,11 @@ def save_encoding(data_dir: Path, person_name: str, encoding: np.ndarray, overwr
 
     if p.exists() and not overwrite:
         raise FileExistsError(f"'{person_name}' already exists")
-    
+
     with open(p, "wb") as f:
         pickle.dump(encoding, f)
 
-    return p 
+    return p
 
 def delete_encoding(data_dir: Path, person_name: str) -> bool:
     """
@@ -89,10 +89,8 @@ def load_database(data_dir: Path) -> Tuple[list[str], np.ndarray]:
 
         names.append(name)
         enc_list.append(enc)
-    
+
     if not enc_list:
         return [], np.empty((0, 128), dtype=np.float64)
-    
+
     return names, np.vstack(enc_list)
-
-

@@ -4,7 +4,7 @@ from pathlib import Path
 @dataclass(frozen=True)
 class Settings:
     """
-        Central settings for the application. 
+        Central settings for the application.
     """
     data_dir: Path = Path("known_faces") # where face encodings are stored
 
