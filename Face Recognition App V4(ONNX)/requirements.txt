@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+streamlit
+opencv-python
+numpy
+pillow
+requests
+insightface
+#  onnxruntime
+onnxruntime-gpu # for gpu
+python-multipart
